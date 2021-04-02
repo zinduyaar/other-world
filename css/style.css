@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #f2f1ec;
+  background-color: #151515;
+  margin: 0;
+  overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.navbar {
+  background: none;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+
+  z-index: 9999;
+  display: flex;
+}
+#navbar-header {
+  opacity: 0;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1 !important;
+  transition: opacity 1s;
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.menu {
+  height: 30px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+}
+.homepage {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.getintouch {
+  background-image: url('../images/logo.png');
+  background-size: contain;
+}
+.left-txt {
+  position: fixed;
+  top: 35%;
+  left: 10%;
+  font-size: 16px;
+  font-weight: 200;
+  width: 20%;
+  text-align: justify;
+  letter-spacing: -0.02em;
+}
+.left-txt-bio {
+  position: fixed;
+  top: 35%;
+  left: 10%;
+  font-size: 16px;
+  font-weight: 200;
+  width: 25%;
+  text-align: justify;
+}
+
+.right-txt {
+  position: fixed;
+  top: 35%;
+  left: 65%;
+  font-size: 16px;
+  font-weight: 200;
+  width: 20%;
+  text-align: justify;
+  letter-spacing: -0.02em;
+}
+.right-txt-contact-us {
+  position: fixed;
+  top: 25%;
+  left: 65%;
+  font-size: 16px;
+  font-weight: 400;
+  width: 20%;
+  text-align: justify;
+}
+.center-txt {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  width: 85%;
+}
+.homepage .box-center {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.heading-main {
+  z-index: 9999;
+  margin: 0vmin 0 2vmin 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off;
+}
+.tagline-main {
+  z-index: 9999;
+  text-align: center;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 24.38px;
+}
+.logo {
+  width: 65%;
+  height: auto;
+}
+.section-four {
+  position: fixed;
+}
+
+.section-four div.map-center-content {
+  position: fixed;
+  margin-bottom: 100px;
+  padding: 70px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.section-four div.column#right {
+  text-align: center;
+}
+
+.map-list {
+  list-style-type: none;
+}
+
+.map-list > li {
+  margin: 33px 0 3px 0;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  text-align: left;
+}
+.button {
+  border: 2.5px solid #f2f1ec;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 20px 1px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #151515;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.logo-top-left {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+}
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 10px;
+    height: 100%;
+  }
+  .homepage {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../images/hexagon-grid.svg');
+    background-size: 100%;
+    background-position: center;
+  }
+  .left-txt {
+    position: fixed;
+    top: 35%;
+    font-size: 10px;
+    font-weight: 200;
+    width: 85%;
+    text-align: justify;
+    word-spacing: -3px;
+  }
+  .left-txt-bio {
+    position: fixed;
+    top: 35%;
+    font-size: 10px;
+    font-weight: 200;
+    width: 85%;
+    text-align: justify;
+    word-spacing: -3px;
+  }
+
+  .right-txt {
+    position: fixed;
+    top: 35%;
+    font-size: 10px;
+    font-weight: 200;
+    width: 85%;
+    text-align: justify;
+    word-spacing: -3px;
+  }
+  .right-txt-contact-us {
+    position: fixed;
+    top: 25%;
+    font-size: 10px;
+    font-weight: 400;
+    width: 85%;
+    text-align: justify;
+    word-spacing: -2px;
+  }
+  .center-txt {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    width: 85%;
+  }
+  .homepage .box-center {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .heading-main {
+    z-index: 9999;
+    margin: 0vmin 0 2vmin 0;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 49px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off;
+  }
+  .tagline-main {
+    z-index: 9999;
+    text-align: center;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+  .section-four {
+    position: fixed;
+  }
+
+  .section-four div.map-center-content {
+    position: fixed;
+    margin-bottom: 100px;
+    padding: 70px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+  }
+
+  .section-four div.column#right {
+    text-align: center;
+  }
+
+  .map-list {
+    list-style-type: none;
+  }
+
+  .map-list > li {
+    margin: 33px 0 3px 0;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    text-align: left;
+  }
+  .button {
+    border: 1.5px solid #f2f1ec;
+    color: white;
+    padding: 2.5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 10px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .button:hover {
+    background-color: #fff;
+    color: #151515;
+  }
+  h3 {
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
