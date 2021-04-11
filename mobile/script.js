@@ -36,12 +36,44 @@ gsap.utils.toArray ('.scrollAnimateSection').forEach (section => {
       images.push (img);
     }
   } else if (canvasId == 'second') {
-    frameCount = 711;
-    for (let i = 1; i <= 711; i++) {
+    frameCount = 717;
+    for (let i = 1; i <= 717; i++) {
       const img = new Image ();
       img.src = `bg/section-2/2 (${i}).webp`;
       images.push (img);
     }
+  }
+  else if (canvasId == 'third') {
+    frameCount = 230;
+    for (let i = 1; i <= 230; i++) {
+      const img = new Image ();
+      img.src = `bg/section-3/bg${i}.webp`;
+      images.push (img);
+    }
+  }
+    else if (canvasId == 'fourth') {
+    frameCount = 220;
+    for (let i = 1; i <= 220; i++) {
+      const img = new Image ();
+      img.src = `bg/section-4/bg${i}.webp`;
+      images.push (img);
+    }
+  }
+    else if (canvasId == 'fifth') {
+    frameCount = 200;
+    for (let i = 1; i <= 200; i++) {
+      const img = new Image ();
+      img.src = `bg/section-5/bg${i}.webp`;
+      images.push (img);
+    }
+  }
+  else if (canvasId == 'sixth') {
+	  frameCount = 305;
+    for (let i = 1; i <= 305; i++) {
+      const img = new Image ();
+      img.src = `bg/section-6/bg${i}.webp`;
+      images.push (img);
+  }
   }
 
   tl.to (airpods, {
